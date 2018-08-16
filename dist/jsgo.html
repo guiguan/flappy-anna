@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body id="wrapper">
+		<span id="jsgo-progress-span"></span>
+		<script>
+			window.jsgoProgress = function(count, total) {
+				if (count === total) {
+					document.getElementById("jsgo-progress-span").style.display = "none";
+				} else {
+					document.getElementById("jsgo-progress-span").innerHTML = count + "/" + total;
+				}
+			}
+		</script>
+		<script src="https://pkg.jsgo.io/github.com/guiguan/flappy-anna.0655fed4d93791c69a3a668ddafd1651a20024c8.js"></script>
+	</body>
+</html>
